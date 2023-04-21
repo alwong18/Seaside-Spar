@@ -444,7 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   peoplePrefabs:
-  - {fileID: 7450465363704675870, guid: 8ae073658a3c349c0a1c41bd07349408, type: 3}
+  - {fileID: 4625237944500863478, guid: 353f6cd826ce94d139a5173bdae50eea, type: 3}
   obstaclePrefabs:
   - {fileID: 5010972455806674873, guid: 419e12cf502044a669bd2cbc8f7a2b35, type: 3}
 --- !u!1 &2147270986
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalInput: 0
-  speed: 15
+  speed: 20
   xRange: 10
   leftRange: 25
   rightRange: 0
