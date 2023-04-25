@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public float xRange = 10.0f;
     public float leftRange = 25.0f;
     public float rightRange = 0.0f;
+    public float lowerBound = -2.0f;
+    public float topBound = -2.0f;
     
 
     public GameObject projectilePrefab;
@@ -41,6 +43,16 @@ public class PlayerController : MonoBehaviour
         if (transform.position.x > xRange)
         {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+        }
+
+        if (transform.position.y > topBound)
+        {
+            transform.position = new Vector3(transform.position.x, topBound, transform.position.z);
+        }
+
+        if (transform.position.y < lowerBound)
+        {
+            transform.position = new Vector3(transform.position.x, lowerBound, transform.position.z);
         }
 
             verticalInput = Input.GetAxis("Vertical");
