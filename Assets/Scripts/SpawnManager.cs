@@ -11,9 +11,12 @@ public class SpawnManager : MonoBehaviour
     private float startDelay = 2;
     private float spawnInterval = 1.5f;
 
+    private PlayerController playerControllerScript;
+
     // Start is called before the first frame update
     void Start()
     {
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
         InvokeRepeating("SpawnRandomPeople", startDelay, spawnInterval);
         InvokeRepeating("SpawnRandomObstacles", startDelay, spawnInterval);
     }
@@ -26,18 +29,24 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnRandomPeople()
     {
-        int peopleIndex = Random.Range(0, peoplePrefabs.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+        if(playerControllerScript.gameOver == false)
+        {
+            int peopleIndex = Random.Range(0, peoplePrefabs.Length);
+            Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
         
-        Instantiate(peoplePrefabs[peopleIndex], spawnPos, peoplePrefabs[peopleIndex].transform.rotation);
+            Instantiate(peoplePrefabs[peopleIndex], spawnPos, peoplePrefabs[peopleIndex].transform.rotation);
+        }
     }
 
     void SpawnRandomObstacles()
     {
-        int obstacleIndex = Random.Range(0, obstaclePrefabs.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+        if(playerControllerScript.gameOver == false)
+        {
+            int obstacleIndex = Random.Range(0, obstaclePrefabs.Length);
+            Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
         
-        Instantiate(obstaclePrefabs[obstacleIndex], spawnPos, obstaclePrefabs[obstacleIndex].transform.rotation);
+            Instantiate(obstaclePrefabs[obstacleIndex], spawnPos, obstaclePrefabs[obstacleIndex].transform.rotation);
+        }   
     }
 }
 
