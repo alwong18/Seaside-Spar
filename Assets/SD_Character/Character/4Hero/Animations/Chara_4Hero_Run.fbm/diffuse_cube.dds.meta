@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: c3b00aa4378cb408880f2bbee49e2487
+=======
+guid: 3a4df3e127c424386ad2e2d13b24d303
+>>>>>>> 4f1c055a958a5e1ed6bff6428d7b65d325a38bba
 IHVImageFormatImporter:
   externalObjects: {}
   textureSettings:
