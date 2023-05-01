@@ -38,7 +38,7 @@ public class SampleAnimation : MonoBehaviour
         }
 
         // パンチ aを押す
-        if (Input.GetKeyUp("a"))
+        if (Input.GetKeyUp("space"))
         {
             //Attack01に遷移する
             this.animator.SetBool(key_isAttack01, true);
@@ -62,7 +62,7 @@ public class SampleAnimation : MonoBehaviour
         }
        
         // ジャンプ spaceを押す
-        if (Input.GetKeyUp("space"))
+        if (Input.GetKeyUp("a"))
         {
             //Jumpに遷移する
             this.animator.SetBool(key_isJump, true);
