@@ -56,7 +56,8 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, lowerBound, transform.position.z);
         }
 
-            verticalInput = Input.GetAxis("Vertical");
+        // Moving the player
+        verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.right * -verticalInput * Time.deltaTime * speed);
 
         //lauching projectile
