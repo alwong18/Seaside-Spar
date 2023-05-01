@@ -23,6 +23,7 @@ public class DetectCollisions : MonoBehaviour
         Destroy(gameObject);
     }
 
+    //Game ends when bomb hits turtle
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Obstacle"))
