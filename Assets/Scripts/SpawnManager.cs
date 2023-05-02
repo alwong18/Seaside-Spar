@@ -38,6 +38,7 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
+    //Spawn Obstacles if game isn't over
     void SpawnRandomObstacles()
     {
         if(playerControllerScript.gameOver == false)
