@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public float lowerBound = -2.0f;
     public float topBound = -2.0f;
     
-    public bool gameOver;
+    //public bool gameOver;
     
     public GameObject projectilePrefab;
 
@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.right * -verticalInput * Time.deltaTime * speed);
 
         //lauching projectile
-        if (Input.GetKeyDown(KeyCode.Space) && !gameOver)
+        if (Input.GetKeyDown(KeyCode.Space) /*&& !gameOver*/)
         {
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         } 

@@ -29,7 +29,7 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnRandomPeople()
     {
-        if(playerControllerScript.gameOver == false)
+        //if(playerControllerScript.gameOver == false)
         {
             int peopleIndex = Random.Range(0, peoplePrefabs.Length);
             Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
@@ -41,7 +41,7 @@ public class SpawnManager : MonoBehaviour
     //Spawn Obstacles if game isn't over
     void SpawnRandomObstacles()
     {
-        if(playerControllerScript.gameOver == false)
+        //if(playerControllerScript.gameOver == false)
         {
             int obstacleIndex = Random.Range(0, obstaclePrefabs.Length);
             Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
