@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public bool gameOver;
     
     public GameObject projectilePrefab;
+    public ParticleSystem collisionParticle;
 
     // Start is called before the first frame update
     void Start()

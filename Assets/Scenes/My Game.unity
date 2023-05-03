@@ -906,7 +906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4679013640650686, guid: f85c4948bfaac4e48b32c1254bdec6b8, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4679013640650686, guid: f85c4948bfaac4e48b32c1254bdec6b8, type: 3}
       propertyPath: m_LocalScale.x
@@ -988,6 +988,7 @@ MonoBehaviour:
   topBound: -2
   gameOver: 0
   projectilePrefab: {fileID: 2623960866206429351, guid: 0f686dbf1cd714d8fa2f99cf509cca11, type: 3}
+  collisionParticle: {fileID: 19814690, guid: cd4d7020429cde74db076ffa72495419, type: 3}
 --- !u!1 &1495782291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,7 +1055,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1569611093
 GameObject:
@@ -1146,6 +1147,7 @@ MonoBehaviour:
   topBound: -2
   gameOver: 0
   projectilePrefab: {fileID: 4663044002821741894, guid: 0f686dbf1cd714d8fa2f99cf509cca11, type: 3}
+  collisionParticle: {fileID: 0}
 --- !u!54 &2147270988
 Rigidbody:
   m_ObjectHideFlags: 0
