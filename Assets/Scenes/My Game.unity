@@ -1104,7 +1104,7 @@ MonoBehaviour:
   peoplePrefabs:
   - {fileID: 4625237944500863478, guid: 353f6cd826ce94d139a5173bdae50eea, type: 3}
   obstaclePrefabs:
-  - {fileID: 5010972455806674873, guid: 419e12cf502044a669bd2cbc8f7a2b35, type: 3}
+  - {fileID: 4911626015690841700, guid: ab5579b6464b345378519583322127b6, type: 3}
 --- !u!1 &2147270986
 GameObject:
   m_ObjectHideFlags: 0
