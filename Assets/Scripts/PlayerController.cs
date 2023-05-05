@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     public float rightRange = 0.0f;
     public float lowerBound = -2.0f;
     public float topBound = -2.0f;
+
+    public AudioClip shootSound;
+    private AudioSource playerAudio;
     
     //public bool gameOver;
     
@@ -19,7 +22,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -64,6 +67,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) /*&& !gameOver*/)
         {
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            playerAudio.PlayOneShot(shootSound, 1.0f);
         } 
     }
 }
