@@ -1083,7 +1083,7 @@ MonoBehaviour:
   rightRange: 0
   lowerBound: -2
   topBound: -2
-  shootSound: {fileID: 8300000, guid: b2d90ec6c7a35f84d9b801f65c493e92, type: 3}
+  shootSound: {fileID: 8300000, guid: ba4e079b85001994385cf4013da1c158, type: 3}
   projectilePrefab: {fileID: 2623960866206429351, guid: 0f686dbf1cd714d8fa2f99cf509cca11, type: 3}
 --- !u!82 &1323373986
 AudioSource:
