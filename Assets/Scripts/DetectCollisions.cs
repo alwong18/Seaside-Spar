@@ -29,10 +29,10 @@ public class DetectCollisions : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            Debug.Log("Game Over");
-            playerControllerScript.gameOver = true;
-           
             playerControllerScript.collisionParticle.Play();
+            
+            /*Debug.Log("Game Over");
+            playerControllerScript.gameOver = true;*/
         }
     }*/
 }
