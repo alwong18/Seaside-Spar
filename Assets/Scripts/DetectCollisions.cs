@@ -29,10 +29,16 @@ public class DetectCollisions : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
+            Debug.Log("Game Over");
+            playerControllerScript.gameOver = true;
+           
             playerControllerScript.collisionParticle.Play();
+<<<<<<< HEAD
             
             /*Debug.Log("Game Over");
             playerControllerScript.gameOver = true;
+=======
+>>>>>>> parent of 59d4485 (Merge branch 'Particles-effects')
         }
     }*/
 }
