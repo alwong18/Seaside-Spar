@@ -32,7 +32,7 @@ public class DetectCollisions : MonoBehaviour
             playerControllerScript.collisionParticle.Play();
             
             /*Debug.Log("Game Over");
-            playerControllerScript.gameOver = true;*/
+            playerControllerScript.gameOver = true;
         }
     }*/
 }
