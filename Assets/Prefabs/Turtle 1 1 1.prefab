@@ -429,6 +429,7 @@ GameObject:
   - component: {fileID: 224406158123987506}
   - component: {fileID: 8789812586817875263}
   - component: {fileID: 8611553641249407324}
+  - component: {fileID: -4156467647665921347}
   m_Layer: 0
   m_Name: Turtle 1 1 1
   m_TagString: Obstacle
@@ -527,6 +528,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82e1a2b9e09224ed8834a02ba2847bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &-4156467647665921347
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4911626015690841700}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ad2b68ed5ee1046adaf69499a3411837, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5543981633449659875
 GameObject:
   m_ObjectHideFlags: 0

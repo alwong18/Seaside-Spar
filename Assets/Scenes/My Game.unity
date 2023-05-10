@@ -224,6 +224,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &285561481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4911626015690841700, guid: ab5579b6464b345378519583322127b6, type: 3}
+  m_PrefabInstance: {fileID: 1585790403}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &285561488
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285561481}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: -203655887218126122, guid: 16dc67c7b221f414d80f2d4e02b76695, type: 3}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &391766024
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,9 +1006,9 @@ MonoBehaviour:
   rightRange: 0
   lowerBound: -2
   topBound: -2
-  gameOver: 0
+  shootSound: {fileID: 0}
   projectilePrefab: {fileID: 2623960866206429351, guid: 0f686dbf1cd714d8fa2f99cf509cca11, type: 3}
-  collisionParticle: {fileID: 19814690, guid: cd4d7020429cde74db076ffa72495419, type: 3}
+  collisionParticle: {fileID: 0}
 --- !u!1 &1495782291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,7 +1254,7 @@ MonoBehaviour:
   rightRange: 0
   lowerBound: -2
   topBound: -2
-  gameOver: 0
+  shootSound: {fileID: 0}
   projectilePrefab: {fileID: 4663044002821741894, guid: 0f686dbf1cd714d8fa2f99cf509cca11, type: 3}
   collisionParticle: {fileID: 0}
 --- !u!54 &2147270988
