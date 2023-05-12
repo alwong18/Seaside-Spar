@@ -6,6 +6,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI gameOverText;
     public List<GameObject> targets;
     private int score;
 
@@ -13,6 +14,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         score = 100;
+
+        gameOverText.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
