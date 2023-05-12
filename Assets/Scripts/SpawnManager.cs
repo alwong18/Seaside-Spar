@@ -20,8 +20,6 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SpawnEnemyWave(2);
-
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
         InvokeRepeating("SpawnRandomPeople", startDelay, spawnInterval);
         InvokeRepeating("SpawnRandomObstacles", startDelay, spawnInterval);
@@ -33,28 +31,14 @@ public class SpawnManager : MonoBehaviour
       
     }
 
-    void SpawnEnemyWave(int enemiesToSpawn)
-    {
-        for(int i = 0; i < enemiesToSpawn; i++)
-        {
-            Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
-
-            int peopleIndex = Random.Range(0, peoplePrefabs.Length);
-            Instantiate(peoplePrefabs[peopleIndex], spawnPos, peoplePrefabs[peopleIndex].transform.rotation);
-
-            int obstacleIndex = Random.Range(0, obstaclePrefabs.Length);
-            Instantiate(obstaclePrefabs[obstacleIndex], spawnPos, obstaclePrefabs[obstacleIndex].transform.rotation);
-        }
-    }
-
-    /*void SpawnRandomPeople()
+    void SpawnRandomPeople()
     {
         if(playerControllerScript.gameOver == false)
         {
-            //int peopleIndex = Random.Range(0, peoplePrefabs.Length);
-            //Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+            int peopleIndex = Random.Range(0, peoplePrefabs.Length);
+            Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
         
-            //Instantiate(peoplePrefabs[peopleIndex], spawnPos, peoplePrefabs[peopleIndex].transform.rotation);
+            Instantiate(peoplePrefabs[peopleIndex], spawnPos, peoplePrefabs[peopleIndex].transform.rotation);
         }
     }
 
@@ -63,11 +47,11 @@ public class SpawnManager : MonoBehaviour
     {
         if(playerControllerScript.gameOver == false)
         {
-            //int obstacleIndex = Random.Range(0, obstaclePrefabs.Length);
-            //Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+            int obstacleIndex = Random.Range(0, obstaclePrefabs.Length);
+            Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
         
-            //Instantiate(obstaclePrefabs[obstacleIndex], spawnPos, obstaclePrefabs[obstacleIndex].transform.rotation);
+            Instantiate(obstaclePrefabs[obstacleIndex], spawnPos, obstaclePrefabs[obstacleIndex].transform.rotation);
         }   
-    }*/
+    }
 }
 
