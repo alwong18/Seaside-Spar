@@ -10,6 +10,10 @@ public class SpawnManager : MonoBehaviour
     private float spawnPosZ = 20;
     private float startDelay = 2;
     private float spawnInterval = 1.5f;
+    private int peopleIndex;
+    private Vector3 spawnPos;
+    private int obstacleIndex;
+
 
     private PlayerController playerControllerScript;
 
