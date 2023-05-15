@@ -27,6 +27,11 @@ public class DetectCollisions : MonoBehaviour
     {
         gameManager.UpdateScore(pointValue);
         Destroy(gameObject);
+
+        if(gameObject.CompareTag("Enemy"))
+        {
+            gameManager.GameOver();
+        }
     }
 
     //Game ends when bomb hits turtle

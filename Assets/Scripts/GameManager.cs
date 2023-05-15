@@ -14,8 +14,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         score = 100;
-
-        gameOverText.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -28,5 +26,10 @@ public class GameManager : MonoBehaviour
     {
         score += scoreToAdd;
         scoreText.text = "Score: " + score;
+    }
+
+    public void GameOver()
+    {
+        gameOverText.gameObject.SetActive(true);
     }
 }
