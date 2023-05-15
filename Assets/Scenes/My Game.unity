@@ -620,6 +620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1717609687}
+  gameOverText: {fileID: 0}
   targets:
   - {fileID: 2623960866206429351, guid: 0f686dbf1cd714d8fa2f99cf509cca11, type: 3}
   - {fileID: 4625237944500863478, guid: 353f6cd826ce94d139a5173bdae50eea, type: 3}
@@ -1036,8 +1037,9 @@ MonoBehaviour:
   rightRange: 0
   lowerBound: -2
   topBound: -2
-  gameOver: 0
+  shootSound: {fileID: 8300000, guid: ba4e079b85001994385cf4013da1c158, type: 3}
   projectilePrefab: {fileID: 2623960866206429351, guid: 0f686dbf1cd714d8fa2f99cf509cca11, type: 3}
+  collisionParticle: {fileID: 0}
 --- !u!1 &1495782291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,7 +1155,7 @@ MonoBehaviour:
   peoplePrefabs:
   - {fileID: 4625237944500863478, guid: 353f6cd826ce94d139a5173bdae50eea, type: 3}
   obstaclePrefabs:
-  - {fileID: 5010972455806674873, guid: 419e12cf502044a669bd2cbc8f7a2b35, type: 3}
+  - {fileID: 5010972455806674873, guid: ab5579b6464b345378519583322127b6, type: 3}
 --- !u!1 &1717609685
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,8 +1331,9 @@ MonoBehaviour:
   rightRange: 0
   lowerBound: -2
   topBound: -2
-  gameOver: 0
+  shootSound: {fileID: 0}
   projectilePrefab: {fileID: 4663044002821741894, guid: 0f686dbf1cd714d8fa2f99cf509cca11, type: 3}
+  collisionParticle: {fileID: 0}
 --- !u!54 &2147270988
 Rigidbody:
   m_ObjectHideFlags: 0
