@@ -5,10 +5,14 @@ using UnityEngine;
 public class DetectCollisions : MonoBehaviour
 {
     private PlayerController playerControllerScript;
+    private GameManager gameManager;
+
+    public int pointValue;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
@@ -21,6 +25,7 @@ public class DetectCollisions : MonoBehaviour
     //Destroy objects on collision
     private void OnTriggerEnter(Collider other)
     {
+        gameManager.UpdateScore(pointValue);
         Destroy(gameObject);
     }
 
