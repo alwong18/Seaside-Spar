@@ -3,18 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI gameOverText;
+    public Button restartButton;
+    public GameObject titleScreen;
     public List<GameObject> targets;
     private int score;
 
+    private PlayerController playerControllerScript;
+    private SpawnManager spawnManager;
+
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        score = 100;
+    
     }
 
     // Update is called once per frame
@@ -31,11 +37,25 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        restartButton.gameObject.SetActive(true);
         gameOverText.gameObject.SetActive(true);
     }
 
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void StartGame()
+    {
+        score = 100;
+
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
+        spawnManager = GameObject.Find("Spawn Manager").GetComponent<SpawnManager>();
+
+        spawnManager.SpawnRandomObstacles();
+        spawnManager.SpawnRandomPeople();
+
+        titleScreen.gameObject.SetActive(false);
     }
 }

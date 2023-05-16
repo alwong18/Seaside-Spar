@@ -14,13 +14,12 @@ public class SpawnManager : MonoBehaviour
     private Vector3 spawnPos;
     private int obstacleIndex;
 
-
     private PlayerController playerControllerScript;
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
         InvokeRepeating("SpawnRandomPeople", startDelay, spawnInterval);
         InvokeRepeating("SpawnRandomObstacles", startDelay, spawnInterval);
     }
@@ -31,7 +30,7 @@ public class SpawnManager : MonoBehaviour
       
     }
 
-    void SpawnRandomPeople()
+    public void SpawnRandomPeople()
     {
         //if(playerControllerScript.gameOver == false)
         {
@@ -43,7 +42,7 @@ public class SpawnManager : MonoBehaviour
     }
 
     //Spawn Obstacles if game isn't over
-    void SpawnRandomObstacles()
+    public void SpawnRandomObstacles()
     {
         //if(playerControllerScript.gameOver == false)
         {
