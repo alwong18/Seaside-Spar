@@ -218,6 +218,7 @@ RectTransform:
   - {fileID: 684188612}
   - {fileID: 1121632656}
   - {fileID: 615643404}
+  - {fileID: 2146650624}
   - {fileID: 1717609686}
   - {fileID: 1505793807}
   - {fileID: 1380289054}
@@ -376,6 +377,7 @@ GameObject:
   - component: {fileID: 615643407}
   - component: {fileID: 615643406}
   - component: {fileID: 615643405}
+  - component: {fileID: 615643408}
   m_Layer: 5
   m_Name: Medium Button
   m_TagString: Untagged
@@ -447,19 +449,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 615643406}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 841842370}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: RestartGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &615643406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,6 +488,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615643403}
   m_CullTransparentMesh: 1
+--- !u!114 &615643408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615643403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb2246e1d499488492b08447003a7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &684188611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,6 +1178,7 @@ GameObject:
   - component: {fileID: 1121632659}
   - component: {fileID: 1121632658}
   - component: {fileID: 1121632657}
+  - component: {fileID: 1121632660}
   m_Layer: 5
   m_Name: Easy Button
   m_TagString: Untagged
@@ -1196,7 +1199,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1770521621}
-  - {fileID: 2146650624}
   m_Father: {fileID: 23873356}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1248,19 +1250,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1121632658}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 841842370}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: RestartGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1121632658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1299,6 +1289,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121632655}
   m_CullTransparentMesh: 1
+--- !u!114 &1121632660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121632655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb2246e1d499488492b08447003a7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1323373980 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1446535677835012, guid: f85c4948bfaac4e48b32c1254bdec6b8, type: 3}
@@ -1359,7 +1361,7 @@ RectTransform:
   m_Children:
   - {fileID: 2078807049}
   m_Father: {fileID: 23873356}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1559,7 +1561,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 23873356}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1742,7 +1744,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 23873356}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -2128,6 +2130,7 @@ GameObject:
   - component: {fileID: 2146650627}
   - component: {fileID: 2146650626}
   - component: {fileID: 2146650625}
+  - component: {fileID: 2146650628}
   m_Layer: 5
   m_Name: Hard Button
   m_TagString: Untagged
@@ -2144,16 +2147,16 @@ RectTransform:
   m_GameObject: {fileID: 2146650623}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 192699515}
-  m_Father: {fileID: 1121632656}
-  m_RootOrder: 1
+  m_Father: {fileID: 23873356}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 210, y: 0}
+  m_AnchoredPosition: {x: 210, y: -60}
   m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2146650625
@@ -2199,19 +2202,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2146650626}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 841842370}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: RestartGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2146650626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2250,3 +2241,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146650623}
   m_CullTransparentMesh: 1
+--- !u!114 &2146650628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146650623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb2246e1d499488492b08447003a7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
