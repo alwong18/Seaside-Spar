@@ -15,7 +15,7 @@ public class DetectCollisions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     //Destroy objects on collision
