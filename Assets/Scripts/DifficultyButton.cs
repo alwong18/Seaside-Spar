@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DifficultyButton : MonoBehaviour
 {
     private Button button;
-    private SpawnManager spawnManager;
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -14,7 +14,7 @@ public class DifficultyButton : MonoBehaviour
         button = GetComponent<Button>();
         button.onClick.AddListener(SetDifficulty);
 
-        spawnManager = GameObject.Find("Spawn Manager").GetComponent<SpawnManager>();
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -26,6 +26,6 @@ public class DifficultyButton : MonoBehaviour
     void SetDifficulty()
     {
         Debug.Log(button.gameObject.name + " was clicked");
-        spawnManager.StartGame();
+        gameManager.StartGame();
     }
 }
