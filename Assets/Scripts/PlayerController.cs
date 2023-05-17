@@ -15,14 +15,14 @@ public class PlayerController : MonoBehaviour
     public AudioClip shootSound;
     private AudioSource playerAudio;
     
-    //public bool gameOver;
-    
     public GameObject projectilePrefab;
+    public GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
         playerAudio = GetComponent<AudioSource>();
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.right * -verticalInput * Time.deltaTime * speed);
 
         //lauching projectile
-        if (Input.GetKeyDown(KeyCode.Space) /*&& !gameOver*/)
+        if (Input.GetKeyDown(KeyCode.Space) /*&& gameManager.isGameActive = false*/)
         {
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
             playerAudio.PlayOneShot(shootSound, 1.0f);

@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject titleScreen;
     public List<GameObject> targets;
     private int score;
+    public bool isGameNotActive;
 
     private PlayerController playerControllerScript;
     private SpawnManager spawnManager;
@@ -37,6 +38,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        isGameNotActive = true;
         restartButton.gameObject.SetActive(true);
         gameOverText.gameObject.SetActive(true);
     }
@@ -48,6 +50,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        isGameNotActive = false;
         score = 100;
 
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
