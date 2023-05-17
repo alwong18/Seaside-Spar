@@ -974,7 +974,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 117961314736528957, guid: ab5579b6464b345378519583322127b6, type: 3}
+      propertyPath: lengthInSec
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 117961314736528957, guid: ab5579b6464b345378519583322127b6, type: 3}
       propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 117961314736528957, guid: ab5579b6464b345378519583322127b6, type: 3}
+      propertyPath: InitialModule.size3D
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 117961314754790649, guid: ab5579b6464b345378519583322127b6, type: 3}
@@ -1015,7 +1023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5720215265122288862, guid: ab5579b6464b345378519583322127b6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21
+      value: 20.1
       objectReference: {fileID: 0}
     - target: {fileID: 5720215265122288862, guid: ab5579b6464b345378519583322127b6, type: 3}
       propertyPath: m_LocalRotation.w
