@@ -31,6 +31,7 @@ public class DetectCollisions : MonoBehaviour
         if(gameObject.CompareTag("Enemy"))
         {
             gameManager.GameOver();
+            Debug.Log("Game Over");
         }
     }
 
