@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) /*&& !gameOver*/)
         {
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
-            playerAudio.PlayOneShot(shootSound, 1.0f);
+            playerAudio.PlayOneShot(shootSound, 0.7f);
         } 
     }
 }
