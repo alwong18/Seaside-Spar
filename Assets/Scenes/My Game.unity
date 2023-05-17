@@ -1015,7 +1015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5720215265122288862, guid: ab5579b6464b345378519583322127b6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 5720215265122288862, guid: ab5579b6464b345378519583322127b6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1045,6 +1045,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8611553641249407324, guid: ab5579b6464b345378519583322127b6, type: 3}
+      propertyPath: collisionParticle
+      value: 
+      objectReference: {fileID: 1580093662}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab5579b6464b345378519583322127b6, type: 3}
 --- !u!1 &1323373980 stripped
@@ -1190,6 +1194,11 @@ MonoBehaviour:
   - {fileID: 4625237944500863478, guid: 353f6cd826ce94d139a5173bdae50eea, type: 3}
   obstaclePrefabs:
   - {fileID: 4911626015690841700, guid: ab5579b6464b345378519583322127b6, type: 3}
+--- !u!198 &1580093662 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 117961314736528957, guid: ab5579b6464b345378519583322127b6, type: 3}
+  m_PrefabInstance: {fileID: 1277643100}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2147270986
 GameObject:
   m_ObjectHideFlags: 0
