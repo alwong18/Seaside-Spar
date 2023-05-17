@@ -176,7 +176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eb2246e1d499488492b08447003a7ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  difficulty: 0
 --- !u!114 &18428575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,8 +485,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
