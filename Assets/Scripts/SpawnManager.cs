@@ -32,6 +32,7 @@ public class SpawnManager : MonoBehaviour
       
     }
 
+    //Spawn enemies if game isn't over
     public void SpawnRandomPeople()
     {
         if(gameManager.isGameActive == true)
