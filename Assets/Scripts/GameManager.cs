@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public Button restartButton;
     public GameObject titleScreen;
     public List<GameObject> targets;
-    private int score;
+    public int score;
     public bool isGameActive;
 
     private PlayerController playerControllerScript;

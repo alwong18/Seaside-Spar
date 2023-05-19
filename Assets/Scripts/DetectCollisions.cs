@@ -28,7 +28,7 @@ public class DetectCollisions : MonoBehaviour
         gameManager.UpdateScore(pointValue);
         Destroy(gameObject);
 
-        if(gameObject.CompareTag("Enemy"))
+        if(gameObject.CompareTag("Enemy") && gameManager.score == 0)
         {
             gameManager.GameOver();
             Debug.Log("Game Over");
