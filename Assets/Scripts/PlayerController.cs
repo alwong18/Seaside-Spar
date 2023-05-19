@@ -64,10 +64,10 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.right * -verticalInput * Time.deltaTime * speed);
 
         //lauching projectile
-        if (Input.GetKeyDown(KeyCode.Space) /*&& gameManager.isGameActive = false*/)
+        if (Input.GetKeyDown(KeyCode.Space) /*&& gameManager.isGameNotActive = false*/)
         {
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
             playerAudio.PlayOneShot(shootSound, 1.0f);
-        } 
+        }
     }
 }

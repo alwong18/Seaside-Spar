@@ -34,22 +34,4 @@ public class DetectCollisions : MonoBehaviour
             Debug.Log("Game Over");
         }
     }
-
-    //Game ends when bomb hits turtle
-    /* private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Obstacle"))
-        {
-            Debug.Log("Game Over");
-            playerControllerScript.gameOver = true;
-           
-            playerControllerScript.collisionParticle.Play();
-<<<<<<< HEAD
-            
-            /*Debug.Log("Game Over");
-            playerControllerScript.gameOver = true;
-=======
->>>>>>> parent of 59d4485 (Merge branch 'Particles-effects')
-        }
-    }*/
 }
