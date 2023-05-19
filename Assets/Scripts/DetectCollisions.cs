@@ -19,7 +19,7 @@ public class DetectCollisions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     //Destroy objects on collision
@@ -28,27 +28,10 @@ public class DetectCollisions : MonoBehaviour
         gameManager.UpdateScore(pointValue);
         Destroy(gameObject);
 
-        if(gameObject.CompareTag("Enemy"))
+        if(gameObject.CompareTag("Enemy") && gameManager.score == 0)
         {
             gameManager.GameOver();
+            Debug.Log("Game Over");
         }
     }
-
-    //Game ends when bomb hits turtle
-    /* private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Obstacle"))
-        {
-            Debug.Log("Game Over");
-            playerControllerScript.gameOver = true;
-           
-            playerControllerScript.collisionParticle.Play();
-<<<<<<< HEAD
-            
-            /*Debug.Log("Game Over");
-            playerControllerScript.gameOver = true;
-=======
->>>>>>> parent of 59d4485 (Merge branch 'Particles-effects')
-        }
-    }*/
 }

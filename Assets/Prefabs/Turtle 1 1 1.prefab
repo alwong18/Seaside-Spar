@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 8671886461509244130}
   - component: {fileID: 8512215997253089409}
   m_Layer: 0
-  m_Name: Turtle
+  m_Name: Turtle 1 1 1
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -501,7 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ece7bf8dad414edf85d0cc133be3e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 20
 --- !u!114 &8671886461509244130
 MonoBehaviour:
   m_ObjectHideFlags: 0

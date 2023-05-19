@@ -8,7 +8,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] obstaclePrefabs;
     private float spawnRangeX = 10;
     private float spawnPosZ = 20;
-    private float startDelay = 2;
+    private float startDelay = 5;
     private float spawnInterval = 1.5f;
     private int peopleIndex;
     private Vector3 spawnPos;
@@ -22,6 +22,8 @@ public class SpawnManager : MonoBehaviour
     {
         InvokeRepeating("SpawnRandomPeople", startDelay, spawnInterval);
         InvokeRepeating("SpawnRandomObstacles", startDelay, spawnInterval);
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -30,9 +32,10 @@ public class SpawnManager : MonoBehaviour
       
     }
 
+    //Spawn enemies if game isn't over
     public void SpawnRandomPeople()
     {
-        //if(playerControllerScript.gameOver == false)
+        if(gameManager.isGameActive == true)
         {
             int peopleIndex = Random.Range(0, peoplePrefabs.Length);
             Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
@@ -44,7 +47,7 @@ public class SpawnManager : MonoBehaviour
     //Spawn Obstacles if game isn't over
     public void SpawnRandomObstacles()
     {
-        //if(playerControllerScript.gameOver == false)
+        if(gameManager.isGameActive == true)
         {
             int obstacleIndex = Random.Range(0, obstaclePrefabs.Length);
             Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
